@@ -48,8 +48,13 @@ Home and End navigation.
 
 ## Licence
 
-CC BY 3.0, matching the Furn HTML template it is ported from. Imagery in the
-demo is from Unsplash.
+Free to use and modify on any number of Shopify stores, including client
+stores. The one thing we ask is that you do not repackage and resell the theme
+itself.
+
+Note that the [Furn HTML template](https://colorlib.com/wp/template/furn/) this
+design is ported from is a **paid** template — this Shopify theme is the free
+one. Imagery in the demo is from Unsplash.
 
 ## Credits
 
