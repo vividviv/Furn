@@ -1,0 +1,157 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero",
+      "blocks": {
+        "eyebrow": {
+          "type": "text",
+          "settings": { "text": "<p>70% sale off</p>", "alignment": "left" }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": { "heading": "Furniture at cost", "size": "h0", "alignment": "left" }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pieces built to be lived with — solid frames, honest materials and a price that makes sense.</p>",
+            "alignment": "left"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": { "label": "Discover more", "style": "solid", "alignment": "left" }
+        }
+      },
+      "block_order": ["eyebrow", "heading", "text", "button"],
+      "settings": {
+        "height": 88,
+        "overlay_opacity": 0,
+        "content_position": "left",
+        "boxed": true,
+        "color_scheme": "scheme_1"
+      }
+    },
+    "tabbed-collections": {
+      "type": "tabbed-collections",
+      "blocks": {
+        "tab-1": { "type": "tab", "settings": { "label": "Sofa" } },
+        "tab-2": { "type": "tab", "settings": { "label": "Table" } },
+        "tab-3": { "type": "tab", "settings": { "label": "Chair" } },
+        "tab-4": { "type": "tab", "settings": { "label": "Bed" } }
+      },
+      "block_order": ["tab-1", "tab-2", "tab-3", "tab-4"],
+      "settings": {
+        "heading": "Popular products",
+        "heading_size": "h2",
+        "description": "<p>The pieces our customers come back for, across every room in the house.</p>",
+        "products_to_show": 4,
+        "columns": 4,
+        "columns_mobile": "2",
+        "show_view_all": true,
+        "view_all_label": "View all",
+        "color_scheme": "scheme_1"
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": { "type": "heading", "settings": { "heading": "Manufacturer" } },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We build in our own workshop, so nothing passes through a middleman. Hardwood frames, eight-way hand-tied springs and upholstery cut on site.</p><p>That is why a Furn sofa costs what it does, and why it lasts.</p>"
+          }
+        },
+        "button": { "type": "button", "settings": { "label": "Discover more", "style": "solid" } }
+      },
+      "block_order": ["heading", "text", "button"],
+      "settings": {
+        "image_ratio": "landscape",
+        "image_position": "left",
+        "vertical_alignment": "center",
+        "color_scheme": "scheme_2"
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Products you may like",
+        "heading_size": "h2",
+        "description": "<p>Hand-picked pieces that sit well with what you have been looking at.</p>",
+        "layout": "grid",
+        "products_to_show": 8,
+        "columns": 4,
+        "columns_mobile": "2",
+        "show_view_all": true,
+        "color_scheme": "scheme_1"
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-1": { "type": "collection", "settings": {} },
+        "collection-2": { "type": "collection", "settings": {} },
+        "collection-3": { "type": "collection", "settings": {} },
+        "collection-4": { "type": "collection", "settings": {} }
+      },
+      "block_order": ["collection-1", "collection-2", "collection-3", "collection-4"],
+      "settings": {
+        "heading": "Shop by room",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "title_position": "on",
+        "columns": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme_1"
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-1": {
+          "type": "column",
+          "settings": { "heading": "Free delivery", "text": "<p>On every order over $500, to your room of choice.</p>" }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": { "heading": "10 year frame warranty", "text": "<p>Solid hardwood, guaranteed for a decade.</p>" }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": { "heading": "100 night trial", "text": "<p>Live with it. If it is not right, we collect it.</p>" }
+        }
+      },
+      "block_order": ["column-1", "column-2", "column-3"],
+      "settings": { "heading": "Why buy from Furn", "alignment": "center", "color_scheme": "scheme_2" }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "heading": "From the workshop",
+        "blog": "news",
+        "posts_to_show": 3,
+        "show_excerpt": true,
+        "color_scheme": "scheme_1"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "heading": "Join the list",
+        "text": "<p>New pieces, restocks and the occasional workshop story.</p>",
+        "color_scheme": "scheme_4"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "tabbed-collections",
+    "image-with-text",
+    "featured-collection",
+    "collection-list",
+    "multicolumn",
+    "blog-posts",
+    "newsletter"
+  ]
+}
