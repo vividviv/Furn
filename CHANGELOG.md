@@ -21,6 +21,20 @@ theme-blocks architecture, sharing its foundation with Fashe 2.0.
 - `show_title` on the eight `main-*` sections, so a template using
   `page-header` does not end up with two `<h1>` elements.
 
+### Fixed in the shared design system
+
+Building the HTML edition on the same stylesheet surfaced three bugs that were
+also present in Fashe, and are fixed in both:
+
+- `.h4`, `.h5` and `.h6` utility classes were never defined — only `.h0`
+  through `.h3`. Seven places in the theme use them, so those headings had been
+  rendering one size too large.
+- `.nav__link` was `display: block`, so the chevron on a dropdown link wrapped
+  onto its own line.
+- The HTML edition's `money()` used `toFixed(2)` while the server-rendered
+  markup used a thousands separator, so four-figure prices disagreed between
+  the two. Latent in Fashe, whose prices all sit under $1,000.
+
 ### Notes
 
 - `shopify theme check`: 98 files, 0 offenses.

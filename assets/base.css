@@ -189,6 +189,9 @@ hr {
 .h1 { font-size: var(--text-h1); }
 .h2 { font-size: var(--text-h2); }
 .h3 { font-size: var(--text-h3); }
+.h4 { font-size: var(--text-h4); }
+.h5 { font-size: var(--text-h5); }
+.h6 { font-size: var(--text-h6); }
 
 .text-sm { font-size: var(--text-sm); }
 .text-xs { font-size: var(--text-xs); }
@@ -740,7 +743,11 @@ select {
 }
 
 .nav__link {
-  display: block;
+  /* inline-flex, not block: dropdown links carry a chevron that would
+     otherwise wrap onto its own line. */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   padding-block: 0.5rem;
   font-size: var(--text-sm);
   letter-spacing: 0.04em;
@@ -1817,6 +1824,10 @@ body:has(dialog.modal[open]) { overflow: hidden; }
   margin-inline: auto;
 }
 
+.section-header--stacked > .button {
+  margin-top: var(--space-sm);
+}
+
 @media screen and (max-width: 749px) {
   .tabs__nav {
     flex-wrap: nowrap;
@@ -1827,5 +1838,39 @@ body:has(dialog.modal[open]) { overflow: hidden; }
 
   .tabs__nav::-webkit-scrollbar {
     display: none;
+  }
+}
+
+/* Image with text -------------------------------------------------------- */
+
+.image-with-text {
+  display: grid;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+@media screen and (min-width: 750px) {
+  .image-with-text {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2xl);
+  }
+
+  .image-with-text--reverse .image-with-text__media {
+    order: 2;
+  }
+}
+
+/* Contact ---------------------------------------------------------------- */
+
+.contact {
+  display: grid;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+@media screen and (min-width: 750px) {
+  .contact {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    gap: var(--space-2xl);
   }
 }

@@ -1,24 +1,9 @@
 <section class="section color-{{ section.settings.color_scheme }} color-scheme">
   <div class="page-width">
     <div
-      class="image-with-text"
-      style="
-        display: grid;
-        gap: var(--space-lg);
-        align-items: {{ section.settings.vertical_alignment }};
-      "
+      class="image-with-text{% if section.settings.image_position == 'right' %} image-with-text--reverse{% endif %}"
+      style="align-items: {{ section.settings.vertical_alignment }};"
     >
-      <style>
-        @media screen and (min-width: 750px) {
-          #shopify-section-{{ section.id }} .image-with-text {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: var(--space-2xl);
-          }
-          {% if section.settings.image_position == 'right' %}
-            #shopify-section-{{ section.id }} .image-with-text__media { order: 2; }
-          {% endif %}
-        }
-      </style>
 
       <div class="image-with-text__media" data-animate>
         <div class="media media--{{ section.settings.image_ratio }}">
